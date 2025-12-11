@@ -23,7 +23,7 @@ export const createIdea = async (newIdea: {
     ...newIdea,
     createdAt: new Date().toISOString(),
   });
-
+  console.log(res)
   return res.data;
 };
 
