@@ -8,7 +8,7 @@ export const fetchIdeas = async (limit?: number): Promise<Idea[]> => {
   return res.data;
 };
 
-export const fetchIdea = async (ideaId: string): Promise<Idea> => {
+export const fetchIdea = async (ideaId: string): Promise<Idea> => { 
   const res = await api.get(`/ideas/${ideaId}`);
   return res.data;
 };
